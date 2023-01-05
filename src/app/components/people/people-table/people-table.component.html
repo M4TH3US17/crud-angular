@@ -1,0 +1,21 @@
+
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">CPF</th>
+            <th scope="col">N° RG</th>
+          </tr>
+        </thead>
+    
+        <tbody>
+          <tr *ngFor="let person of people;">
+            <th scope="row">{{person.id}}</th>
+            <td>{{person.name}}</td>
+            <td>{{person.cpf}} </td>
+            <td>{{person.numRG}}</td>
+          </tr>
+      </table>
+</div>
